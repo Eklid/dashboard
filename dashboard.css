@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+.bg-red {
+  background-color: rgba(255, 0, 0, 0.808);
+}
+
+.bg-green {
+  background-color: rgba(0, 128, 0, 0.822);
+}
+
+.bg-blue {
+  background-color: rgba(0, 0, 255, 0.829);
+}
+
+.bg-orange {
+  background-color: rgba(255, 166, 0, 0.829);
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-lightgray {
+  background-color: rgba(240, 240, 240);
+}
+
+.border {
+  border: 2px solid red;
+}
+
+.grid {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(13, 1fr);
+}
+.navbar {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-color: black;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 2%;
+}
+
+.logo {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.sidebar {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 14;
+  display: flex;
+  flex-direction: column;
+}
+
+.cards-container {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 5;
+  /* background-color: darkseagreen; */
+  padding: 1%;
+}
+
+.cards {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1% 0;
+}
+
+.card {
+  width: 23%;
+  height: 100%;
+  /* background-color: red; */
+  display: flex;
+  padding: 2%;
+}
+
+.card-left {
+  width: 70%;
+  flex-direction: column;
+}
+
+.card-right {
+  width: 30%;
+}
+
+.card-icon {
+  font-size: 33px;
+  color: white;
+}
+
+.card-left h2 {
+  color: white;
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+.card-right h2 {
+  color: white;
+  font-size: 25px;
+  text-align: right;
+}
+
+.regions {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 5;
+  grid-row-end: 10;
+  /* background-color: darkorange; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2%;
+}
+.regions h2 {
+  margin-bottom: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fields {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 10;
+  /* background-color: darkviolet; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 2%;
+}
+
+.fields h2 {
+  margin-bottom: 1rem;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+.stats {
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 10;
+  grid-row-end: 14;
+  /* background-color: dodgerblue; */
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+}
+.progress {
+  display: flex;
+  flex-direction: row;
+}
+.done {
+  width: 25%;
+  background-color: green;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.done p {
+  padding: 5px;
+}
+.empty {
+  width: 75%;
+  background-color: grey;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.done-1 {
+  width: 45%;
+  background-color: rgb(255, 187, 0);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.empty-1 {
+  width: 55%;
+  background-color: grey;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.done-1 p {
+  padding: 5px;
+}
+
+.user-info {
+  width: 100%;
+  height: 20%;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+
+.image-1 i {
+  padding-top: 15px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  padding-top: 15px;
+}
+
+.middle {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.icons {
+  font-size: 20px;
+  /* padding-bottom: 15px; */
+  padding-top: 8px;
+  padding-left: 5px;
+}
+
+.dash-links {
+  width: 95%;
+  height: 80%;
+  background-color: white;
+  padding: 5% 0;
+}
+
+.dash-links h3 {
+  margin: 5%;
+}
+
+.dash-links div {
+  display: flex;
+  flex-direction: column;
+}
+
+.dash-link {
+  text-decoration: none;
+  color: black;
+  margin: 5px;
+  padding: 5px 10px;
+}
+
+.active {
+  background-color: royalblue;
+  padding: 5px 10px;
+  border-radius: 3px;
+  color: white;
+}
